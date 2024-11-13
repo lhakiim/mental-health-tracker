@@ -93,7 +93,7 @@
         classNameString = "flex flex-col items-center justify-center min-h-[24rem] p-6";
         htmlString = `
             <div class="flex flex-col items-center justify-center min-h-[24rem] p-6">
-                <img src="{% static 'image/sedih-banget.png' %}" alt="Sad face" class="w-32 h-32 mb-4"/>
+                <img src="{% static 'image/sedih-banget.gif' %}" alt="Sad face" class="w-32 h-32 mb-4"/>
                 <p class="text-center text-gray-600 mt-4">Belum ada data mood pada mental health tracker.</p>
             </div>
         `;
@@ -151,10 +151,10 @@
             </div>
             `;
         });
-    }
-    document.getElementById("mood_entry_cards").className = classNameString;
-    document.getElementById("mood_entry_cards").innerHTML = htmlString;
-}
+      }
+      document.getElementById("mood_entry_cards").className = classNameString;
+      document.getElementById("mood_entry_cards").innerHTML = htmlString;
+  }
 refreshMoodEntries();
 
   const modal = document.getElementById('crudModal');
